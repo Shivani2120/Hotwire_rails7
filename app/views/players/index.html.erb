@@ -22,7 +22,7 @@
        <td><%= player.contact =%></td>
        <td><%= link_to 'Edit', edit_player_path(player) =%></td>
        <td><%= link_to 'Show', player_path(player) =%></td>
-       <td><%= link_to "Destroy", player_path(player), data: {
+       <td><%= button_to "Destroy", player_path(player), data: {
         turbo_method: :delete,
         turbo_confirm: "Are you sure?"
       } %></td>   
